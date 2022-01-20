@@ -1,0 +1,835 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1084BB395A9A8685050B5B03 /* Pods_FindCoronaCenterRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855466332E9B2D037563A9CD /* Pods_FindCoronaCenterRxSwift.framework */; };
+		1094F87159009F77BF1FFF35 /* Pods_FindCoronaCenterRxSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB66A494CE67F4D0C94916A /* Pods_FindCoronaCenterRxSwiftTests.framework */; };
+		364854A227994AE600B54766 /* SelectCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364854A127994AE600B54766 /* SelectCenterView.swift */; };
+		364854A427994AF200B54766 /* SelectCenterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364854A327994AF200B54766 /* SelectCenterViewModel.swift */; };
+		364854A6279954EC00B54766 /* SelectCenterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364854A5279954EC00B54766 /* SelectCenterViewCell.swift */; };
+		364854A9279985A700B54766 /* DetailMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364854A8279985A700B54766 /* DetailMapView.swift */; };
+		364854AB279985AE00B54766 /* DetailMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364854AA279985AE00B54766 /* DetailMapViewModel.swift */; };
+		364854AD2799A48200B54766 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364854AC2799A48200B54766 /* APIKey.swift */; };
+		3652617727982B6F00995307 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652617627982B6F00995307 /* AppDelegate.swift */; };
+		3652617927982B6F00995307 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652617827982B6F00995307 /* SceneDelegate.swift */; };
+		3652618027982B7300995307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3652617F27982B7300995307 /* Assets.xcassets */; };
+		3652618327982B7300995307 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3652618127982B7300995307 /* LaunchScreen.storyboard */; };
+		3652618E27982B7300995307 /* FindCoronaCenterRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652618D27982B7300995307 /* FindCoronaCenterRxSwiftTests.swift */; };
+		3652619827982B7300995307 /* FindCoronaCenterRxSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652619727982B7300995307 /* FindCoronaCenterRxSwiftUITests.swift */; };
+		3652619A27982B7300995307 /* FindCoronaCenterRxSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652619927982B7300995307 /* FindCoronaCenterRxSwiftUITestsLaunchTests.swift */; };
+		365261A92798310A00995307 /* CenterAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365261A82798310A00995307 /* CenterAPIResponse.swift */; };
+		365261AE2798315700995307 /* CenterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365261AD2798315700995307 /* CenterAPI.swift */; };
+		365261B02798316200995307 /* CenterNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365261AF2798316100995307 /* CenterNetwork.swift */; };
+		365261B6279845B100995307 /* SelectRegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365261B5279845B100995307 /* SelectRegionView.swift */; };
+		365261B8279845BF00995307 /* SelectRegionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365261B7279845BF00995307 /* SelectRegionViewModel.swift */; };
+		365261BF2798517200995307 /* SelectRegionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365261BE2798517200995307 /* SelectRegionCollectionViewCell.swift */; };
+		CC5B5F76781B6DF8542AF178 /* Pods_FindCoronaCenterRxSwift_FindCoronaCenterRxSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2903B01D14EEC8D796B199D2 /* Pods_FindCoronaCenterRxSwift_FindCoronaCenterRxSwiftUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3652618A27982B7300995307 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3652616B27982B6F00995307 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3652617227982B6F00995307;
+			remoteInfo = FindCoronaCenterRxSwift;
+		};
+		3652619427982B7300995307 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3652616B27982B6F00995307 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3652617227982B6F00995307;
+			remoteInfo = FindCoronaCenterRxSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2903B01D14EEC8D796B199D2 /* Pods_FindCoronaCenterRxSwift_FindCoronaCenterRxSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindCoronaCenterRxSwift_FindCoronaCenterRxSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E1D3F10065AB9549CCE44FD /* Pods-FindCoronaCenterRxSwift-FindCoronaCenterRxSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindCoronaCenterRxSwift-FindCoronaCenterRxSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-FindCoronaCenterRxSwift-FindCoronaCenterRxSwiftUITests/Pods-FindCoronaCenterRxSwift-FindCoronaCenterRxSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		364854A127994AE600B54766 /* SelectCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCenterView.swift; sourceTree = "<group>"; };
+		364854A327994AF200B54766 /* SelectCenterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCenterViewModel.swift; sourceTree = "<group>"; };
+		364854A5279954EC00B54766 /* SelectCenterViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCenterViewCell.swift; sourceTree = "<group>"; };
+		364854A8279985A700B54766 /* DetailMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMapView.swift; sourceTree = "<group>"; };
+		364854AA279985AE00B54766 /* DetailMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMapViewModel.swift; sourceTree = "<group>"; };
+		364854AC2799A48200B54766 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		3652617327982B6F00995307 /* FindCoronaCenterRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindCoronaCenterRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3652617627982B6F00995307 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3652617827982B6F00995307 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3652617F27982B7300995307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3652618227982B7300995307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3652618427982B7300995307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3652618927982B7300995307 /* FindCoronaCenterRxSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindCoronaCenterRxSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3652618D27982B7300995307 /* FindCoronaCenterRxSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCoronaCenterRxSwiftTests.swift; sourceTree = "<group>"; };
+		3652619327982B7300995307 /* FindCoronaCenterRxSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindCoronaCenterRxSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3652619727982B7300995307 /* FindCoronaCenterRxSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCoronaCenterRxSwiftUITests.swift; sourceTree = "<group>"; };
+		3652619927982B7300995307 /* FindCoronaCenterRxSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCoronaCenterRxSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		365261A82798310A00995307 /* CenterAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterAPIResponse.swift; sourceTree = "<group>"; };
+		365261AD2798315700995307 /* CenterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterAPI.swift; sourceTree = "<group>"; };
+		365261AF2798316100995307 /* CenterNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterNetwork.swift; sourceTree = "<group>"; };
+		365261B5279845B100995307 /* SelectRegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRegionView.swift; sourceTree = "<group>"; };
+		365261B7279845BF00995307 /* SelectRegionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRegionViewModel.swift; sourceTree = "<group>"; };
+		365261BE2798517200995307 /* SelectRegionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRegionCollectionViewCell.swift; sourceTree = "<group>"; };
+		3DB66A494CE67F4D0C94916A /* Pods_FindCoronaCenterRxSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindCoronaCenterRxSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FDABF4E7601355D142BF283 /* Pods-FindCoronaCenterRxSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindCoronaCenterRxSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-FindCoronaCenterRxSwiftTests/Pods-FindCoronaCenterRxSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C6F5B7752E987A33B223AC0 /* Pods-FindCoronaCenterRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindCoronaCenterRxSwift.release.xcconfig"; path = "Target Support Files/Pods-FindCoronaCenterRxSwift/Pods-FindCoronaCenterRxSwift.release.xcconfig"; sourceTree = "<group>"; };
+		5389E3C622DE770A2FBD1682 /* Pods-FindCoronaCenterRxSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindCoronaCenterRxSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-FindCoronaCenterRxSwiftTests/Pods-FindCoronaCenterRxSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		855466332E9B2D037563A9CD /* Pods_FindCoronaCenterRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindCoronaCenterRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A493083528E1600A75B175EF /* Pods-FindCoronaCenterRxSwift-FindCoronaCenterRxSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindCoronaCenterRxSwift-FindCoronaCenterRxSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-FindCoronaCenterRxSwift-FindCoronaCenterRxSwiftUITests/Pods-FindCoronaCenterRxSwift-FindCoronaCenterRxSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DD01EFB72F8EDA78DD2E184A /* Pods-FindCoronaCenterRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindCoronaCenterRxSwift.debug.xcconfig"; path = "Target Support Files/Pods-FindCoronaCenterRxSwift/Pods-FindCoronaCenterRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3652617027982B6F00995307 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1084BB395A9A8685050B5B03 /* Pods_FindCoronaCenterRxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3652618627982B7300995307 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1094F87159009F77BF1FFF35 /* Pods_FindCoronaCenterRxSwiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3652619027982B7300995307 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC5B5F76781B6DF8542AF178 /* Pods_FindCoronaCenterRxSwift_FindCoronaCenterRxSwiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02519A1C7C5534A829FC0E33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD01EFB72F8EDA78DD2E184A /* Pods-FindCoronaCenterRxSwift.debug.xcconfig */,
+				4C6F5B7752E987A33B223AC0 /* Pods-FindCoronaCenterRxSwift.release.xcconfig */,
+				2E1D3F10065AB9549CCE44FD /* Pods-FindCoronaCenterRxSwift-FindCoronaCenterRxSwiftUITests.debug.xcconfig */,
+				A493083528E1600A75B175EF /* Pods-FindCoronaCenterRxSwift-FindCoronaCenterRxSwiftUITests.release.xcconfig */,
+				3FDABF4E7601355D142BF283 /* Pods-FindCoronaCenterRxSwiftTests.debug.xcconfig */,
+				5389E3C622DE770A2FBD1682 /* Pods-FindCoronaCenterRxSwiftTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2A02651AB7689617074CD9FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				855466332E9B2D037563A9CD /* Pods_FindCoronaCenterRxSwift.framework */,
+				2903B01D14EEC8D796B199D2 /* Pods_FindCoronaCenterRxSwift_FindCoronaCenterRxSwiftUITests.framework */,
+				3DB66A494CE67F4D0C94916A /* Pods_FindCoronaCenterRxSwiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		364854A027994A7900B54766 /* SelectCenterView */ = {
+			isa = PBXGroup;
+			children = (
+				364854A127994AE600B54766 /* SelectCenterView.swift */,
+				364854A327994AF200B54766 /* SelectCenterViewModel.swift */,
+				364854A5279954EC00B54766 /* SelectCenterViewCell.swift */,
+			);
+			path = SelectCenterView;
+			sourceTree = "<group>";
+		};
+		364854A72799858C00B54766 /* DetailMapView */ = {
+			isa = PBXGroup;
+			children = (
+				364854A8279985A700B54766 /* DetailMapView.swift */,
+				364854AA279985AE00B54766 /* DetailMapViewModel.swift */,
+			);
+			path = DetailMapView;
+			sourceTree = "<group>";
+		};
+		3652616A27982B6F00995307 = {
+			isa = PBXGroup;
+			children = (
+				3652617527982B6F00995307 /* FindCoronaCenterRxSwift */,
+				3652618C27982B7300995307 /* FindCoronaCenterRxSwiftTests */,
+				3652619627982B7300995307 /* FindCoronaCenterRxSwiftUITests */,
+				3652617427982B6F00995307 /* Products */,
+				02519A1C7C5534A829FC0E33 /* Pods */,
+				2A02651AB7689617074CD9FF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3652617427982B6F00995307 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3652617327982B6F00995307 /* FindCoronaCenterRxSwift.app */,
+				3652618927982B7300995307 /* FindCoronaCenterRxSwiftTests.xctest */,
+				3652619327982B7300995307 /* FindCoronaCenterRxSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3652617527982B6F00995307 /* FindCoronaCenterRxSwift */ = {
+			isa = PBXGroup;
+			children = (
+				3652617627982B6F00995307 /* AppDelegate.swift */,
+				3652617827982B6F00995307 /* SceneDelegate.swift */,
+				365261A7279830A600995307 /* Entities */,
+				365261AC2798313500995307 /* Network */,
+				365261B1279831C500995307 /* Presentation */,
+				3652617F27982B7300995307 /* Assets.xcassets */,
+				3652618127982B7300995307 /* LaunchScreen.storyboard */,
+				3652618427982B7300995307 /* Info.plist */,
+			);
+			path = FindCoronaCenterRxSwift;
+			sourceTree = "<group>";
+		};
+		3652618C27982B7300995307 /* FindCoronaCenterRxSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				3652618D27982B7300995307 /* FindCoronaCenterRxSwiftTests.swift */,
+			);
+			path = FindCoronaCenterRxSwiftTests;
+			sourceTree = "<group>";
+		};
+		3652619627982B7300995307 /* FindCoronaCenterRxSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3652619727982B7300995307 /* FindCoronaCenterRxSwiftUITests.swift */,
+				3652619927982B7300995307 /* FindCoronaCenterRxSwiftUITestsLaunchTests.swift */,
+			);
+			path = FindCoronaCenterRxSwiftUITests;
+			sourceTree = "<group>";
+		};
+		365261A7279830A600995307 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				365261A82798310A00995307 /* CenterAPIResponse.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		365261AC2798313500995307 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				365261AD2798315700995307 /* CenterAPI.swift */,
+				365261AF2798316100995307 /* CenterNetwork.swift */,
+				364854AC2799A48200B54766 /* APIKey.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		365261B1279831C500995307 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				365261B42798448900995307 /* SelectRegionView */,
+				364854A027994A7900B54766 /* SelectCenterView */,
+				364854A72799858C00B54766 /* DetailMapView */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		365261B42798448900995307 /* SelectRegionView */ = {
+			isa = PBXGroup;
+			children = (
+				365261B5279845B100995307 /* SelectRegionView.swift */,
+				365261B7279845BF00995307 /* SelectRegionViewModel.swift */,
+				365261BE2798517200995307 /* SelectRegionCollectionViewCell.swift */,
+			);
+			path = SelectRegionView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3652617227982B6F00995307 /* FindCoronaCenterRxSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3652619D27982B7300995307 /* Build configuration list for PBXNativeTarget "FindCoronaCenterRxSwift" */;
+			buildPhases = (
+				25803C2E01EBB7AEA7CE9B4B /* [CP] Check Pods Manifest.lock */,
+				3652616F27982B6F00995307 /* Sources */,
+				3652617027982B6F00995307 /* Frameworks */,
+				3652617127982B6F00995307 /* Resources */,
+				477AFB31F27B5ADF888CA24C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindCoronaCenterRxSwift;
+			productName = FindCoronaCenterRxSwift;
+			productReference = 3652617327982B6F00995307 /* FindCoronaCenterRxSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3652618827982B7300995307 /* FindCoronaCenterRxSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 365261A027982B7300995307 /* Build configuration list for PBXNativeTarget "FindCoronaCenterRxSwiftTests" */;
+			buildPhases = (
+				6D854ED5D0BE028194CA9A33 /* [CP] Check Pods Manifest.lock */,
+				3652618527982B7300995307 /* Sources */,
+				3652618627982B7300995307 /* Frameworks */,
+				3652618727982B7300995307 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3652618B27982B7300995307 /* PBXTargetDependency */,
+			);
+			name = FindCoronaCenterRxSwiftTests;
+			productName = FindCoronaCenterRxSwiftTests;
+			productReference = 3652618927982B7300995307 /* FindCoronaCenterRxSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3652619227982B7300995307 /* FindCoronaCenterRxSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 365261A327982B7300995307 /* Build configuration list for PBXNativeTarget "FindCoronaCenterRxSwiftUITests" */;
+			buildPhases = (
+				B3A347439565CA1E10949245 /* [CP] Check Pods Manifest.lock */,
+				3652618F27982B7300995307 /* Sources */,
+				3652619027982B7300995307 /* Frameworks */,
+				3652619127982B7300995307 /* Resources */,
+				0598DBC080390653F68490C2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3652619527982B7300995307 /* PBXTargetDependency */,
+			);
+			name = FindCoronaCenterRxSwiftUITests;
+			productName = FindCoronaCenterRxSwiftUITests;
+			productReference = 3652619327982B7300995307 /* FindCoronaCenterRxSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3652616B27982B6F00995307 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					3652617227982B6F00995307 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					3652618827982B7300995307 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 3652617227982B6F00995307;
+					};
+					3652619227982B7300995307 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 3652617227982B6F00995307;
+					};
+				};
+			};
+			buildConfigurationList = 3652616E27982B6F00995307 /* Build configuration list for PBXProject "FindCoronaCenterRxSwift" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3652616A27982B6F00995307;
+			productRefGroup = 3652617427982B6F00995307 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3652617227982B6F00995307 /* FindCoronaCenterRxSwift */,
+				3652618827982B7300995307 /* FindCoronaCenterRxSwiftTests */,
+				3652619227982B7300995307 /* FindCoronaCenterRxSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3652617127982B6F00995307 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3652618327982B7300995307 /* LaunchScreen.storyboard in Resources */,
+				3652618027982B7300995307 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3652618727982B7300995307 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3652619127982B7300995307 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0598DBC080390653F68490C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FindCoronaCenterRxSwift-FindCoronaCenterRxSwiftUITests/Pods-FindCoronaCenterRxSwift-FindCoronaCenterRxSwiftUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FindCoronaCenterRxSwift-FindCoronaCenterRxSwiftUITests/Pods-FindCoronaCenterRxSwift-FindCoronaCenterRxSwiftUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FindCoronaCenterRxSwift-FindCoronaCenterRxSwiftUITests/Pods-FindCoronaCenterRxSwift-FindCoronaCenterRxSwiftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25803C2E01EBB7AEA7CE9B4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindCoronaCenterRxSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		477AFB31F27B5ADF888CA24C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FindCoronaCenterRxSwift/Pods-FindCoronaCenterRxSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FindCoronaCenterRxSwift/Pods-FindCoronaCenterRxSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FindCoronaCenterRxSwift/Pods-FindCoronaCenterRxSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D854ED5D0BE028194CA9A33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindCoronaCenterRxSwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3A347439565CA1E10949245 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindCoronaCenterRxSwift-FindCoronaCenterRxSwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3652616F27982B6F00995307 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364854AB279985AE00B54766 /* DetailMapViewModel.swift in Sources */,
+				365261B02798316200995307 /* CenterNetwork.swift in Sources */,
+				365261AE2798315700995307 /* CenterAPI.swift in Sources */,
+				364854AD2799A48200B54766 /* APIKey.swift in Sources */,
+				3652617727982B6F00995307 /* AppDelegate.swift in Sources */,
+				364854A9279985A700B54766 /* DetailMapView.swift in Sources */,
+				365261B6279845B100995307 /* SelectRegionView.swift in Sources */,
+				364854A227994AE600B54766 /* SelectCenterView.swift in Sources */,
+				365261A92798310A00995307 /* CenterAPIResponse.swift in Sources */,
+				365261B8279845BF00995307 /* SelectRegionViewModel.swift in Sources */,
+				365261BF2798517200995307 /* SelectRegionCollectionViewCell.swift in Sources */,
+				3652617927982B6F00995307 /* SceneDelegate.swift in Sources */,
+				364854A6279954EC00B54766 /* SelectCenterViewCell.swift in Sources */,
+				364854A427994AF200B54766 /* SelectCenterViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3652618527982B7300995307 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3652618E27982B7300995307 /* FindCoronaCenterRxSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3652618F27982B7300995307 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3652619A27982B7300995307 /* FindCoronaCenterRxSwiftUITestsLaunchTests.swift in Sources */,
+				3652619827982B7300995307 /* FindCoronaCenterRxSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3652618B27982B7300995307 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3652617227982B6F00995307 /* FindCoronaCenterRxSwift */;
+			targetProxy = 3652618A27982B7300995307 /* PBXContainerItemProxy */;
+		};
+		3652619527982B7300995307 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3652617227982B6F00995307 /* FindCoronaCenterRxSwift */;
+			targetProxy = 3652619427982B7300995307 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3652618127982B7300995307 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3652618227982B7300995307 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3652619B27982B7300995307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3652619C27982B7300995307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3652619E27982B7300995307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD01EFB72F8EDA78DD2E184A /* Pods-FindCoronaCenterRxSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FindCoronaCenterRxSwift/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skillist.FindCoronaCenterRxSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3652619F27982B7300995307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C6F5B7752E987A33B223AC0 /* Pods-FindCoronaCenterRxSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FindCoronaCenterRxSwift/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skillist.FindCoronaCenterRxSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		365261A127982B7300995307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FDABF4E7601355D142BF283 /* Pods-FindCoronaCenterRxSwiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skillist.FindCoronaCenterRxSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindCoronaCenterRxSwift.app/FindCoronaCenterRxSwift";
+			};
+			name = Debug;
+		};
+		365261A227982B7300995307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5389E3C622DE770A2FBD1682 /* Pods-FindCoronaCenterRxSwiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skillist.FindCoronaCenterRxSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindCoronaCenterRxSwift.app/FindCoronaCenterRxSwift";
+			};
+			name = Release;
+		};
+		365261A427982B7300995307 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E1D3F10065AB9549CCE44FD /* Pods-FindCoronaCenterRxSwift-FindCoronaCenterRxSwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skillist.FindCoronaCenterRxSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindCoronaCenterRxSwift;
+			};
+			name = Debug;
+		};
+		365261A527982B7300995307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A493083528E1600A75B175EF /* Pods-FindCoronaCenterRxSwift-FindCoronaCenterRxSwiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skillist.FindCoronaCenterRxSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindCoronaCenterRxSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3652616E27982B6F00995307 /* Build configuration list for PBXProject "FindCoronaCenterRxSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3652619B27982B7300995307 /* Debug */,
+				3652619C27982B7300995307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3652619D27982B7300995307 /* Build configuration list for PBXNativeTarget "FindCoronaCenterRxSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3652619E27982B7300995307 /* Debug */,
+				3652619F27982B7300995307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		365261A027982B7300995307 /* Build configuration list for PBXNativeTarget "FindCoronaCenterRxSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				365261A127982B7300995307 /* Debug */,
+				365261A227982B7300995307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		365261A327982B7300995307 /* Build configuration list for PBXNativeTarget "FindCoronaCenterRxSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				365261A427982B7300995307 /* Debug */,
+				365261A527982B7300995307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3652616B27982B6F00995307 /* Project object */;
+}

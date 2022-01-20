@@ -1,0 +1,6 @@
+framework module Pods_FindCoronaCenterRxSwiftTests {
+  umbrella header "Pods-FindCoronaCenterRxSwiftTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

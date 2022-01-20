@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_FindCoronaCenterRxSwift_FindCoronaCenterRxSwiftUITests : NSObject
+@end
+@implementation PodsDummy_Pods_FindCoronaCenterRxSwift_FindCoronaCenterRxSwiftUITests
+@end
